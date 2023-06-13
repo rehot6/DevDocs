@@ -27,27 +27,8 @@
 	},
 	"homepage": "https://github.com/CoderSerio/developer-sites-in-vscode/blob/main/README.md",
 	"bugs": {
-		"url": "https://github.com/CoderSerio/developer-sites-in-vscode/issues",
-		"email": "2779066456@qq.com"
 	},
 	"activationEvents": [
-		"onCommand:developer-sites-in-vscode.openAuthorBlog",
-		"onCommand:developer-sites-in-vscode.openVueDoc",
-		"onCommand:developer-sites-in-vscode.openQianKunDoc",
-		"onCommand:developer-sites-in-vscode.openReactDoc",
-		"onCommand:developer-sites-in-vscode.openTailwindcssDoc",
-		"onCommand:developer-sites-in-vscode.openXiaoLinCodingDoc",
-		"onCommand:developer-sites-in-vscode.openNodeDoc",
-		"onCommand:developer-sites-in-vscode.openNextDoc",
-		"onCommand:developer-sites-in-vscode.openNuxtDoc",
-		"onCommand:developer-sites-in-vscode.openVuexDoc",
-		"onCommand:developer-sites-in-vscode.openPiniaDoc",
-		"onCommand:developer-sites-in-vscode.openWebpackDoc",
-		"onCommand:developer-sites-in-vscode.openTypeScriptDoc",
-		"onCommand:developer-sites-in-vscode.openDenoDoc",
-		"onCommand:developer-sites-in-vscode.openW3CDoc",
-		"onCommand:developer-sites-in-vscode.openStyledComponentDoc",
-		"onCommand:developer-sites-in-vscode.openSveletDoc"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -71,71 +52,6 @@
 			]
 		},
 		"commands": [
-			{
-				"command": "developer-sites-in-vscode.openAuthorBlog",
-				"title": "open site: Author",
-				"shortTitle": "打开作者的个人博客"
-			},
-			{
-				"command": "developer-sites-in-vscode.openVueDoc",
-				"title": "open site: Vue"
-			},
-			{
-				"command": "developer-sites-in-vscode.openReactDoc",
-				"title": "open site: React"
-			},
-			{
-				"command": "developer-sites-in-vscode.openQianKunDoc",
-				"title": "open site: QianKun"
-			},
-			{
-				"command": "developer-sites-in-vscode.openNodeDoc",
-				"title": "open site: Node"
-			},
-			{
-				"command": "developer-sites-in-vscode.openTailwindcssDoc",
-				"title": "open site: Tailwindcss"
-			},
-			{
-				"command": "developer-sites-in-vscode.openNextDoc",
-				"title": "open site: Next"
-			},
-			{
-				"command": "developer-sites-in-vscode.openNuxtDoc",
-				"title": "open site: Nuxt"
-			},
-			{
-				"command": "developer-sites-in-vscode.openVuexDoc",
-				"title": "open site: Vuex"
-			},
-			{
-				"command": "developer-sites-in-vscode.openPiniaDoc",
-				"title": "open site: Pinia"
-			},
-			{
-				"command": "developer-sites-in-vscode.openWebpackDoc",
-				"title": "open site: Webpack"
-			},
-			{
-				"command": "developer-sites-in-vscode.openTypeScriptDoc",
-				"title": "open site: TypeScript"
-			},
-			{
-				"command": "developer-sites-in-vscode.openDenoDoc",
-				"title": "open site: Deno"
-			},
-			{
-				"command": "developer-sites-in-vscode.openW3CDoc",
-				"title": "open site: W3C"
-			},
-			{
-				"command": "developer-sites-in-vscode.openStyledComponentsDoc",
-				"title": "open site: StyledComponents"
-			},
-			{
-				"command": "developer-sites-in-vscode.openSveletDoc",
-				"title": "open site: Svelet"
-			}
 		]
 	},
 	"scripts": {

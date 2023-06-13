@@ -32,6 +32,7 @@ class WebsiteTreeDataProvider {
     constructor() {
         this.websites = [
             new Website('chatGPT', 'https://cg.nbchat.top/'),
+            new Website('chatGPTaca', 'https://aca.nbchat.top/'),
         ];
         sites_2.sites.forEach((site) => {
             this.websites.push(new Website(site.title, site.path));

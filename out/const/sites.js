@@ -11,8 +11,16 @@ const defaultOptions = {
 // 未来或许会优化成JSON格式，这样在package.json中配置命令的时候就会方便许多
 exports.sites = [
     {
-        title: "Serio's Blog",
-        path: "https://serio.gitee.io/",
+        title: "在线工具",
+        path: "https://tool.lu/",
+        cmd: `${cmdPrefix}openAuthorBlog`,
+        position: defaultPosition,
+        tag: defaultTag,
+        options: defaultOptions,
+    },
+    {
+        title: "编程词典",
+        path: "http://dict.code-nav.cn/",
         cmd: `${cmdPrefix}openAuthorBlog`,
         position: defaultPosition,
         tag: defaultTag,
