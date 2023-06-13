@@ -1,0 +1,172 @@
+{
+	"name": "developer-sites-in-vscode",
+	"displayName": "DevDocs",
+	"description": "Open documents sites in VSCode",
+	"version": "1.1.0",
+	"publisher": "ShenYuyou",
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"doc",
+		"document",
+		"developer",
+		"inside",
+		"内置",
+		"网页",
+		"文档"
+	],
+	"icon": "media/DevDocs.jpg",
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/CoderSerio/developer-sites-in-vscode.git"
+	},
+	"homepage": "https://github.com/CoderSerio/developer-sites-in-vscode/blob/main/README.md",
+	"bugs": {
+		"url": "https://github.com/CoderSerio/developer-sites-in-vscode/issues",
+		"email": "2779066456@qq.com"
+	},
+	"activationEvents": [
+		"onCommand:developer-sites-in-vscode.openAuthorBlog",
+		"onCommand:developer-sites-in-vscode.openVueDoc",
+		"onCommand:developer-sites-in-vscode.openQianKunDoc",
+		"onCommand:developer-sites-in-vscode.openReactDoc",
+		"onCommand:developer-sites-in-vscode.openTailwindcssDoc",
+		"onCommand:developer-sites-in-vscode.openXiaoLinCodingDoc",
+		"onCommand:developer-sites-in-vscode.openNodeDoc",
+		"onCommand:developer-sites-in-vscode.openNextDoc",
+		"onCommand:developer-sites-in-vscode.openNuxtDoc",
+		"onCommand:developer-sites-in-vscode.openVuexDoc",
+		"onCommand:developer-sites-in-vscode.openPiniaDoc",
+		"onCommand:developer-sites-in-vscode.openWebpackDoc",
+		"onCommand:developer-sites-in-vscode.openTypeScriptDoc",
+		"onCommand:developer-sites-in-vscode.openDenoDoc",
+		"onCommand:developer-sites-in-vscode.openW3CDoc",
+		"onCommand:developer-sites-in-vscode.openStyledComponentDoc",
+		"onCommand:developer-sites-in-vscode.openSveletDoc"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "inside-web-container",
+					"title": "VSCode内置网页",
+					"icon": "media/icon.svg"
+				}
+			]
+		},
+		"views": {
+			"inside-web-container": [
+				{
+					"id": "developer-sites-in-vscode",
+					"name": "点击打开",
+					"icon": "media/icon.svg",
+					"contextualTitle": "VSCode内置网页"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "developer-sites-in-vscode.openAuthorBlog",
+				"title": "open site: Author",
+				"shortTitle": "打开作者的个人博客"
+			},
+			{
+				"command": "developer-sites-in-vscode.openVueDoc",
+				"title": "open site: Vue"
+			},
+			{
+				"command": "developer-sites-in-vscode.openReactDoc",
+				"title": "open site: React"
+			},
+			{
+				"command": "developer-sites-in-vscode.openQianKunDoc",
+				"title": "open site: QianKun"
+			},
+			{
+				"command": "developer-sites-in-vscode.openNodeDoc",
+				"title": "open site: Node"
+			},
+			{
+				"command": "developer-sites-in-vscode.openTailwindcssDoc",
+				"title": "open site: Tailwindcss"
+			},
+			{
+				"command": "developer-sites-in-vscode.openNextDoc",
+				"title": "open site: Next"
+			},
+			{
+				"command": "developer-sites-in-vscode.openNuxtDoc",
+				"title": "open site: Nuxt"
+			},
+			{
+				"command": "developer-sites-in-vscode.openVuexDoc",
+				"title": "open site: Vuex"
+			},
+			{
+				"command": "developer-sites-in-vscode.openPiniaDoc",
+				"title": "open site: Pinia"
+			},
+			{
+				"command": "developer-sites-in-vscode.openWebpackDoc",
+				"title": "open site: Webpack"
+			},
+			{
+				"command": "developer-sites-in-vscode.openTypeScriptDoc",
+				"title": "open site: TypeScript"
+			},
+			{
+				"command": "developer-sites-in-vscode.openDenoDoc",
+				"title": "open site: Deno"
+			},
+			{
+				"command": "developer-sites-in-vscode.openW3CDoc",
+				"title": "open site: W3C"
+			},
+			{
+				"command": "developer-sites-in-vscode.openStyledComponentsDoc",
+				"title": "open site: StyledComponents"
+			},
+			{
+				"command": "developer-sites-in-vscode.openSveletDoc",
+				"title": "open site: Svelet"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "^16.18.11",
+		"@types/vscode": "^1.54.0",
+		"@typescript-eslint/eslint-plugin": "^5.31.0",
+		"@typescript-eslint/parser": "^5.31.0",
+		"@vscode/test-electron": "^2.1.5",
+		"eslint": "^8.20.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"typescript": "^4.7.4"
+	},
+	"__metadata": {
+		"id": "b4d696ef-a184-4bd4-999b-5c2f055cdd78",
+		"publisherId": "e6b40682-9cf6-4196-9d8a-3478a67b04b7",
+		"publisherDisplayName": "Shen Yuyou",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1686626386635,
+		"preRelease": false
+	}
+}
